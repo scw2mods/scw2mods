@@ -63,6 +63,60 @@
           ]
         }
       ]
+    },
+    {
+      "id": "king_tut",
+      "name": "King Tut",
+      "slug": "king-tut",
+      "version": "1.60",
+      "author": "KingTut",
+      "description": "Comprehensive gameplay enhancement adding direct interactions, AI routines, and powerful cheat tools",
+      "longDescription": "Adds multiple gameplay features including direct job offers, workout/swimming together interactions, AI workout routines, financial aid system, stable relations auto-management, and an extensive cheat module for simplified gameplay without breaking game balance.",
+      "category": "gameplay",
+      "tags": [
+        "gameplay",
+        "interactions",
+        "AI",
+        "cheat",
+        "quality-of-life"
+      ],
+      "status": "stable",
+      "compatibility": {
+        "gameVersion": "2.0.6",
+        "dependencies": [],
+        "conflicts": []
+      },
+      "features": [
+        "Direct job offers to any character",
+        "Workout & swimming together interactions",
+        "AI workout routines for characters",
+        "Financial aid system for employees",
+        "Stable relations auto-management",
+        "Extensive cheat module with character and MC options"
+      ],
+      "media": {
+        "screenshots": ["king-tut-1.png"],
+        "video": null,
+        "icon": null
+      },
+      "links": {
+        "download": "downloads/king_tut_v1.60.zip",
+        "source": null,
+        "docs": null,
+        "issues": null
+      },
+      "stats": {
+        "lastUpdate": "2025-12-07"
+      },
+      "changelog": [
+        {
+          "version": "1.60",
+          "date": "2025-12-07",
+          "changes": [
+            "Initial release on showcase"
+          ]
+        }
+      ]
     }
   ]
 }
