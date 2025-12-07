@@ -68,7 +68,7 @@ class ModsApp {
             <button
                 class="filter-btn"
                 data-category="${category.id}"
-                aria-label="Filtrer par ${category.name}"
+                aria-label="Filter by ${category.name}"
             >
                 <span class="filter-btn-icon">${category.icon}</span>
                 <span>${category.name}</span>
@@ -150,8 +150,8 @@ class ModsApp {
                                 <span>${mod.stats.stars}</span>
                             </span>
                         </div>
-                        <button class="mod-card-cta" aria-label="Voir les détails de ${sanitizeHTML(mod.name)}">
-                            Détails
+                        <button class="mod-card-cta" aria-label="View details of ${sanitizeHTML(mod.name)}">
+                            Details
                         </button>
                     </footer>
                 </div>
@@ -208,7 +208,7 @@ class ModsApp {
 
             ${mod.features && mod.features.length > 0 ? `
                 <section class="modal-section">
-                    <h3 class="modal-section-title">✨ Fonctionnalités</h3>
+                    <h3 class="modal-section-title">✨ Features</h3>
                     <ul class="modal-features">
                         ${mod.features.map(feature =>
                             `<li>${sanitizeHTML(feature)}</li>`
@@ -218,11 +218,11 @@ class ModsApp {
             ` : ''}
 
             <section class="modal-section">
-                <h3 class="modal-section-title">📊 Statistiques</h3>
+                <h3 class="modal-section-title">📊 Statistics</h3>
                 <div class="modal-stats">
                     <div class="modal-stat">
                         <span class="modal-stat-value">${formatNumber(mod.stats.downloads)}</span>
-                        <span class="modal-stat-label">Téléchargements</span>
+                        <span class="modal-stat-label">Downloads</span>
                     </div>
                     <div class="modal-stat">
                         <span class="modal-stat-value">${mod.stats.stars}</span>
@@ -230,20 +230,20 @@ class ModsApp {
                     </div>
                     <div class="modal-stat">
                         <span class="modal-stat-value">${formatDate(mod.stats.lastUpdate)}</span>
-                        <span class="modal-stat-label">Dernière MAJ</span>
+                        <span class="modal-stat-label">Last Update</span>
                     </div>
                 </div>
             </section>
 
             ${mod.compatibility ? `
                 <section class="modal-section">
-                    <h3 class="modal-section-title">🔧 Compatibilité</h3>
+                    <h3 class="modal-section-title">🔧 Compatibility</h3>
                     <p class="modal-description">
-                        <strong>Version du jeu :</strong> ${sanitizeHTML(mod.compatibility.gameVersion)}
+                        <strong>Game Version:</strong> ${sanitizeHTML(mod.compatibility.gameVersion)}
                     </p>
                     ${mod.installation ? `
                         <p class="modal-description">
-                            <strong>Installation :</strong> ${sanitizeHTML(mod.installation)}
+                            <strong>Installation:</strong> ${sanitizeHTML(mod.installation)}
                         </p>
                     ` : ''}
                 </section>
@@ -257,16 +257,16 @@ class ModsApp {
             </section>
 
             <section class="modal-section">
-                <h3 class="modal-section-title">🔗 Liens</h3>
+                <h3 class="modal-section-title">🔗 Links</h3>
                 <div class="modal-links">
                     ${mod.links.download ? `
                         <a href="${mod.links.download}" target="_blank" rel="noopener" class="modal-link modal-link-primary">
-                            ⬇️ Télécharger
+                            ⬇️ Download
                         </a>
                     ` : ''}
                     ${mod.links.source ? `
                         <a href="${mod.links.source}" target="_blank" rel="noopener" class="modal-link">
-                            💻 Code Source
+                            💻 Source Code
                         </a>
                     ` : ''}
                     ${mod.links.docs ? `
@@ -276,7 +276,7 @@ class ModsApp {
                     ` : ''}
                     ${mod.links.issues ? `
                         <a href="${mod.links.issues}" target="_blank" rel="noopener" class="modal-link">
-                            🐛 Signaler un Bug
+                            🐛 Report a Bug
                         </a>
                     ` : ''}
                 </div>

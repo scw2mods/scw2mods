@@ -32,7 +32,7 @@ class ModsDataManager {
             return this.data;
         } catch (error) {
             console.error('Error loading mods data:', error);
-            showToast('Erreur lors du chargement des données', 'error');
+            showToast('Error loading data', 'error');
             return null;
         }
     }

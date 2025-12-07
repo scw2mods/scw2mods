@@ -1,114 +1,114 @@
 # 🎮 SCW2 Mods Showcase
 
-> Collection complète des mods pour Strip Club Wars 2
+> Complete collection of mods for Strip Club Wars 2
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://scw2mods.github.io)
 
-## 📋 À Propos
+## 📋 About
 
-Site web statique moderne présentant tous les mods disponibles pour **Strip Club Wars 2**. Ce projet offre une interface intuitive pour découvrir, rechercher et télécharger des mods créés par la communauté.
+Modern static website showcasing all available mods for **Strip Club Wars 2**. This project provides an intuitive interface to discover, search, and download community-created mods.
 
-**🔗 Site en ligne :** [https://scw2mods.github.io](https://scw2mods.github.io)
+**🔗 Live Site:** [https://scw2mods.github.io](https://scw2mods.github.io)
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-- 🔍 **Recherche instantanée** - Trouvez rapidement le mod que vous cherchez
-- 🏷️ **Filtres par catégorie** - Gameplay, Graphismes, Interface, Audio, Utilitaires
-- 📊 **Tri multiple** - Par nom, date ou popularité
-- 📱 **Design responsive** - Fonctionne parfaitement sur mobile, tablette et desktop
-- ⚡ **Performance optimisée** - Chargement rapide avec lazy loading des images
-- 🎨 **Interface moderne** - Design gaming sombre avec accents néon
-- 🔗 **Partage facile** - URLs avec paramètres pour partager filtres et mods
+- 🔍 **Instant Search** - Quickly find the mod you're looking for
+- 🏷️ **Category Filters** - Gameplay, Graphics, Interface, Audio, Utilities
+- 📊 **Multiple Sorting** - By name, date, or popularity
+- 📱 **Responsive Design** - Works perfectly on mobile, tablet, and desktop
+- ⚡ **Optimized Performance** - Fast loading with lazy image loading
+- 🎨 **Modern Interface** - Dark gaming design with neon accents
+- 🔗 **Easy Sharing** - URLs with parameters to share filters and mods
 
-## 🛠️ Stack Technique
+## 🛠️ Tech Stack
 
-- **HTML5** - Structure sémantique et accessible
-- **CSS3** - Grid/Flexbox pour layout responsive
-- **JavaScript Vanilla** - Pas de dépendances, code léger
-- **JSON** - Stockage des données des mods
-- **GitHub Pages** - Hébergement gratuit et fiable
+- **HTML5** - Semantic and accessible structure
+- **CSS3** - Grid/Flexbox for responsive layout
+- **Vanilla JavaScript** - No dependencies, lightweight code
+- **JSON** - Mods data storage
+- **GitHub Pages** - Free and reliable hosting
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
 ```
 scw-mods/
-├── index.html              # Page principale
+├── index.html              # Main page
 ├── css/
-│   ├── style.css          # Styles principaux
-│   └── components.css     # Styles des composants
+│   ├── style.css          # Main styles
+│   └── components.css     # Component styles
 ├── js/
-│   ├── app.js             # Logique principale
-│   ├── data.js            # Gestion des données
-│   └── utils.js           # Fonctions utilitaires
+│   ├── app.js             # Main logic
+│   ├── data.js            # Data management
+│   └── utils.js           # Utility functions
 ├── data/
-│   └── mods.json          # Base de données des mods
+│   └── mods.json          # Mods database
 ├── assets/
-│   ├── images/            # Images et screenshots
-│   └── icons/             # Icônes
+│   ├── images/            # Images and screenshots
+│   └── icons/             # Icons
 ├── README.md              # Documentation
-├── CONTRIBUTING.md        # Guide de contribution
-└── .gitignore            # Fichiers ignorés
+├── CONTRIBUTING.md        # Contribution guide
+└── .gitignore            # Ignored files
 ```
 
-## 🚀 Installation & Développement Local
+## 🚀 Installation & Local Development
 
-### Prérequis
+### Prerequisites
 
-- Un serveur web local (ex: Live Server pour VS Code, Python SimpleHTTPServer, etc.)
+- A local web server (e.g., Live Server for VS Code, Python SimpleHTTPServer, etc.)
 - Git
 
-### Cloner le projet
+### Clone the project
 
 ```bash
 git clone https://github.com/scw2mods/scw2mods.github.io.git
 cd scw2mods.github.io
 ```
 
-### Lancer en local
+### Run locally
 
-**Option 1 : VS Code Live Server**
-1. Installer l'extension "Live Server"
-2. Clic droit sur `index.html` → "Open with Live Server"
+**Option 1: VS Code Live Server**
+1. Install the "Live Server" extension
+2. Right-click on `index.html` → "Open with Live Server"
 
-**Option 2 : Python**
+**Option 2: Python**
 ```bash
 # Python 3
 python -m http.server 8000
 
-# Puis ouvrir http://localhost:8000
+# Then open http://localhost:8000
 ```
 
-**Option 3 : Node.js**
+**Option 3: Node.js**
 ```bash
 npx http-server -p 8000
 ```
 
-## 📝 Ajouter un Nouveau Mod
+## 📝 Adding a New Mod
 
-### 1. Préparer les assets
+### 1. Prepare assets
 
-Ajouter les screenshots du mod dans `assets/images/mods/` :
+Add mod screenshots to `assets/images/mods/`:
 ```
 assets/images/mods/
-├── mon-mod-1.jpg
-├── mon-mod-2.jpg
-└── mon-mod-icon.png
+├── my-mod-1.jpg
+├── my-mod-2.jpg
+└── my-mod-icon.png
 ```
 
-### 2. Modifier data/mods.json
+### 2. Edit data/mods.json
 
-Ajouter une entrée dans le tableau `mods` :
+Add an entry to the `mods` array:
 
 ```json
 {
-  "id": "mon_mod",
-  "name": "Mon Super Mod",
-  "slug": "mon-super-mod",
+  "id": "my_mod",
+  "name": "My Awesome Mod",
+  "slug": "my-awesome-mod",
   "version": "1.0",
-  "author": "VotreNom",
-  "description": "Description courte du mod (max 150 caractères)",
-  "longDescription": "Description détaillée expliquant toutes les fonctionnalités...",
+  "author": "YourName",
+  "description": "Short mod description (max 150 characters)",
+  "longDescription": "Detailed description explaining all features...",
   "category": "gameplay",
   "tags": ["tag1", "tag2", "tag3"],
   "status": "stable",
@@ -118,14 +118,14 @@ Ajouter une entrée dans le tableau `mods` :
     "conflicts": []
   },
   "features": [
-    "Fonctionnalité 1",
-    "Fonctionnalité 2",
-    "Fonctionnalité 3"
+    "Feature 1",
+    "Feature 2",
+    "Feature 3"
   ],
   "media": {
-    "screenshots": ["mon-mod-1.jpg", "mon-mod-2.jpg"],
+    "screenshots": ["my-mod-1.jpg", "my-mod-2.jpg"],
     "video": null,
-    "icon": "mon-mod-icon.png"
+    "icon": "my-mod-icon.png"
   },
   "links": {
     "download": "https://github.com/user/repo/releases",
@@ -138,89 +138,89 @@ Ajouter une entrée dans le tableau `mods` :
     "stars": 0,
     "lastUpdate": "2025-12-07"
   },
-  "installation": "Instructions d'installation...",
+  "installation": "Installation instructions...",
   "changelog": [
     {
       "version": "1.0",
       "date": "2025-12-07",
-      "changes": ["Version initiale"]
+      "changes": ["Initial release"]
     }
   ]
 }
 ```
 
-### 3. Tester localement
+### 3. Test locally
 
-Vérifier que le mod s'affiche correctement en local avant de commit.
+Verify the mod displays correctly locally before committing.
 
-### 4. Commit et push
+### 4. Commit and push
 
 ```bash
 git add .
-git commit -m "Ajout du mod: Mon Super Mod"
+git commit -m "Add mod: My Awesome Mod"
 git push origin main
 ```
 
-Le site sera automatiquement mis à jour sur GitHub Pages en 2-3 minutes.
+The site will be automatically updated on GitHub Pages in 2-3 minutes.
 
-## 🎨 Personnalisation
+## 🎨 Customization
 
-### Couleurs
+### Colors
 
-Les couleurs sont définies dans `css/style.css` via les variables CSS :
+Colors are defined in `css/style.css` via CSS variables:
 
 ```css
 :root {
-    --color-bg-dark: #0a0a0a;      /* Fond principal */
-    --color-bg-card: #1a1a1a;      /* Fond des cards */
-    --color-accent: #00ff88;        /* Couleur d'accent */
-    --color-text: #ffffff;          /* Texte principal */
-    --color-text-muted: #a0a0a0;   /* Texte secondaire */
+    --color-bg-dark: #0a0a0a;      /* Main background */
+    --color-bg-card: #1a1a1a;      /* Card background */
+    --color-accent: #00ff88;        /* Accent color */
+    --color-text: #ffffff;          /* Main text */
+    --color-text-muted: #a0a0a0;   /* Secondary text */
 }
 ```
 
-### Catégories
+### Categories
 
-Modifier les catégories dans `data/mods.json` :
+Modify categories in `data/mods.json`:
 
 ```json
 "categories": [
-  {"id": "nouvelle_categorie", "name": "Nouvelle Catégorie", "icon": "🎯"}
+  {"id": "new_category", "name": "New Category", "icon": "🎯"}
 ]
 ```
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-Les contributions sont les bienvenues ! Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour plus de détails.
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-### Comment contribuer
+### How to contribute
 
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/AmazingFeature`)
-3. Commit les changements (`git commit -m 'Add AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
+1. Fork the project
+2. Create a branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📜 License
 
-Ce projet est sous licence MIT. Voir [LICENSE](LICENSE) pour plus d'informations.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## 👥 Auteurs
+## 👥 Authors
 
-- **SCW2 Community** - *Développement initial*
+- **SCW2 Community** - *Initial development*
 
-## 🙏 Remerciements
+## 🙏 Acknowledgments
 
-- Tous les créateurs de mods de la communauté SCW2
-- Les contributeurs du projet
-- La communauté open source
+- All mod creators from the SCW2 community
+- Project contributors
+- The open source community
 
 ## 📞 Support
 
-- 🐛 **Signaler un bug** : [Issues](https://github.com/scw2mods/scw2mods.github.io/issues)
-- 💬 **Discussions** : [Discussions](https://github.com/scw2mods/scw2mods.github.io/discussions)
-- 📧 **Email** : contact@scw2mods.fr
+- 🐛 **Report a bug**: [Issues](https://github.com/scw2mods/scw2mods.github.io/issues)
+- 💬 **Discussions**: [Discussions](https://github.com/scw2mods/scw2mods.github.io/discussions)
+- 📧 **Email**: contact@scw2mods.fr
 
 ---
 
-**Fait avec ❤️ par la communauté SCW2**
+**Made with ❤️ by the SCW2 community**

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "SCW2 Mods Showcase",
-    "description": "Collection complète des mods pour Strip Club Wars 2",
+    "description": "Complete collection of mods for Strip Club Wars 2",
     "version": "1.0.0",
     "lastUpdated": "2025-12-07"
   },
@@ -13,23 +13,8 @@
     },
     {
       "id": "graphics",
-      "name": "Graphismes",
+      "name": "Graphics",
       "icon": "🎨"
-    },
-    {
-      "id": "interface",
-      "name": "Interface",
-      "icon": "🖥️"
-    },
-    {
-      "id": "audio",
-      "name": "Audio",
-      "icon": "🔊"
-    },
-    {
-      "id": "utility",
-      "name": "Utilitaires",
-      "icon": "🛠️"
     }
   ],
   "mods": [
@@ -38,32 +23,22 @@
       "name": "Varied Dialogues",
       "slug": "varied-dialogues",
       "version": "0.1",
-      "author": "Thomas",
-      "description": "Transforme les dialogues sexuels répétitifs en système psychologique dynamique avec 400+ variations.",
-      "longDescription": "Système complet qui analyse les personnalités des NPCs pour générer des dialogues uniques basés sur leurs traits psychologiques, préférences et relation avec le joueur. Fini les dialogues répétitifs ! Chaque interaction devient unique et réaliste grâce à un moteur d'intelligence artificielle qui prend en compte le contexte, l'humeur et l'historique de vos relations.",
+      "author": "Slaver0",
+      "description": "Transforms repetitive sexual dialogues into a dynamic psychological system with 400+ variations.",
+      "longDescription": "Uses character likes (rough sex, domination, submission) to generate unique dialogues. Also adds random variations when no likes are relevant.",
       "category": "gameplay",
       "tags": [
         "dialogue",
-        "psychologie",
-        "ia",
-        "rp",
-        "immersion"
+        "psychology"
       ],
-      "status": "stable",
+      "status": "beta",
       "compatibility": {
-        "gameVersion": "1.0+",
+        "gameVersion": "2.0.6",
         "dependencies": [],
         "conflicts": []
       },
       "features": [
-        "400+ variations de dialogues uniques",
-        "Système psychologique avancé par NPC",
-        "Apprentissage automatique des préférences",
-        "Contexte dynamique basé sur les relations",
-        "Support complet de tous les personnages",
-        "Configuration personnalisable",
-        "Compatible avec les sauvegardes existantes",
-        "Performance optimisée"
+        "400+ unique dialogue variations"
       ],
       "media": {
         "screenshots": [],
@@ -77,20 +52,14 @@
         "issues": "https://github.com/scw2mods/varied-dialogues/issues"
       },
       "stats": {
-        "downloads": 150,
-        "stars": 12,
         "lastUpdate": "2025-12-07"
       },
-      "installation": "Décompresser le contenu de l'archive dans le dossier 'mods' du jeu. Le mod se charge automatiquement au démarrage.",
       "changelog": [
         {
           "version": "0.1",
           "date": "2025-12-07",
           "changes": [
-            "Version initiale",
-            "Système psychologique complet",
-            "400+ dialogues variés",
-            "Support de tous les personnages"
+            "Initial release"
           ]
         }
       ]

@@ -28,7 +28,7 @@ function debounce(func, wait = 300) {
 function formatDate(dateString) {
     const date = new Date(dateString);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('fr-FR', options);
+    return date.toLocaleDateString('en-US', options);
 }
 
 /**
@@ -133,10 +133,10 @@ function lazyLoadImages() {
 function getStatusLabel(status) {
     const labels = {
         'stable': 'Stable',
-        'beta': 'Bêta',
+        'beta': 'Beta',
         'alpha': 'Alpha',
-        'experimental': 'Expérimental',
-        'deprecated': 'Obsolète'
+        'experimental': 'Experimental',
+        'deprecated': 'Deprecated'
     };
     return labels[status] || status;
 }
@@ -216,11 +216,11 @@ function showToast(message, type = 'info') {
 async function copyToClipboard(text) {
     try {
         await navigator.clipboard.writeText(text);
-        showToast('Copié dans le presse-papiers', 'success');
+        showToast('Copied to clipboard', 'success');
         return true;
     } catch (err) {
         console.error('Failed to copy:', err);
-        showToast('Erreur lors de la copie', 'error');
+        showToast('Copy error', 'error');
         return false;
     }
 }
