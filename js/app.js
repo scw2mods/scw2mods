@@ -114,7 +114,7 @@ class ModsApp {
             <article class="mod-card" data-mod-id="${mod.id}" role="button" tabindex="0">
                 <div class="mod-card-image">
                     ${mod.media.screenshots && mod.media.screenshots[0]
-                        ? `<img src="assets/images/mods/${mod.media.screenshots[0]}" alt="${sanitizeHTML(mod.name)}" loading="lazy" />`
+                        ? `<img src="/scw2mods/assets/images/mods/${mod.media.screenshots[0]}" alt="${sanitizeHTML(mod.name)}" loading="lazy" />`
                         : `<div class="mod-card-image-placeholder">${categoryIcon}</div>`
                     }
                     <span class="mod-status-badge ${statusClass}">${statusLabel}</span>
@@ -196,7 +196,7 @@ class ModsApp {
 
             <div class="modal-gallery">
                 ${mod.media.screenshots && mod.media.screenshots[0]
-                    ? `<img src="assets/images/mods/${mod.media.screenshots[0]}" alt="${sanitizeHTML(mod.name)}" />`
+                    ? `<img src="/scw2mods/assets/images/mods/${mod.media.screenshots[0]}" alt="${sanitizeHTML(mod.name)}" />`
                     : `<div class="modal-gallery-placeholder">${categoryIcon}</div>`
                 }
             </div>
