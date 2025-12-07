@@ -112,13 +112,6 @@ class ModsApp {
 
         return `
             <article class="mod-card" data-mod-id="${mod.id}" role="button" tabindex="0">
-                <div class="mod-card-image">
-                    ${mod.media.screenshots && mod.media.screenshots[0]
-                        ? `<img src="assets/images/mods/${mod.media.screenshots[0]}" alt="${sanitizeHTML(mod.name)}" loading="lazy" />`
-                        : `<div class="mod-card-image-placeholder">${categoryIcon}</div>`
-                    }
-                    <span class="mod-status-badge ${statusClass}">${statusLabel}</span>
-                </div>
                 <div class="mod-card-content">
                     <header class="mod-card-header">
                         <h3 class="mod-card-title">${sanitizeHTML(mod.name)}</h3>
@@ -133,6 +126,13 @@ class ModsApp {
                             </span>
                         </div>
                     </header>
+                    <div class="mod-card-image">
+                        ${mod.media.screenshots && mod.media.screenshots[0]
+                            ? `<img src="assets/images/mods/${mod.media.screenshots[0]}" alt="${sanitizeHTML(mod.name)}" loading="lazy" />`
+                            : `<div class="mod-card-image-placeholder">${categoryIcon}</div>`
+                        }
+                        <span class="mod-status-badge ${statusClass}">${statusLabel}</span>
+                    </div>
                     <p class="mod-card-description">${sanitizeHTML(truncateText(mod.description, 120))}</p>
                     <div class="mod-card-tags">
                         ${mod.tags.slice(0, 3).map(tag =>
