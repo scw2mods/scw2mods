@@ -41,15 +41,15 @@
         "400+ unique dialogue variations"
       ],
       "media": {
-        "screenshots": [],
+        "screenshots": ["varied-dialogues-1.png"],
         "video": null,
         "icon": null
       },
       "links": {
-        "download": "https://github.com/scw2mods/varied-dialogues/releases",
-        "source": "https://github.com/scw2mods/varied-dialogues",
-        "docs": "https://github.com/scw2mods/varied-dialogues/wiki",
-        "issues": "https://github.com/scw2mods/varied-dialogues/issues"
+        "download": "downloads/varied_dialogues_v0.1.zip",
+        "source": null,
+        "docs": null,
+        "issues": null
       },
       "stats": {
         "lastUpdate": "2025-12-07"

@@ -76,16 +76,22 @@ BEM convention for CSS classes.
 
 ## Mod addition workflow
 
-1. **Assets**: Add screenshots to `assets/images/mods/`
+1. **Download file**: Copy mod zip to `downloads/`
+   - Format: `mod_name_vX.Y.zip`
+   - Size: Usually 10-100KB
+   - Convert Windows paths (D:\...) to WSL (/mnt/d/...)
+
+2. **Assets**: Add screenshots to `assets/images/mods/`
    - Format: Optimized JPG/PNG < 500KB
    - Resolution: 1920x1080 or 1280x720
    - Naming: `mod-name-1.jpg`, `mod-name-2.jpg`
 
-2. **JSON**: Add entry to `data/mods.json` → `mods` array
+3. **JSON**: Add entry to `data/mods.json` → `mods` array
+   - Use relative paths for download: `downloads/mod_name_vX.Y.zip`
 
-3. **Validation**: Test locally with HTTP server
+4. **Validation**: Test locally with HTTP server
 
-4. **Git**: Commit and push to `main`
+5. **Git**: Commit and push to `main`
 
 ## Important points
 
@@ -94,6 +100,27 @@ BEM convention for CSS classes.
 - Respect indentation (2 spaces)
 - Check image paths (relative to `assets/images/mods/`)
 - Update `site.lastUpdated` for significant changes
+
+### Relative paths (CRITICAL)
+**NEVER use absolute paths** (starting with `/`) in JSON or HTML.
+
+The site is deployed in two contexts:
+- **Local**: `http://localhost:8000/` (root)
+- **GitHub Pages**: `https://username.github.io/scw2mods/` (subfolder)
+
+✅ **Good** (relative paths):
+```json
+"download": "downloads/mod_v1.0.zip"
+"screenshots": ["mod-screenshot.jpg"]
+```
+
+❌ **Bad** (absolute paths):
+```json
+"download": "/downloads/mod_v1.0.zip"
+"screenshots": ["/assets/images/mods/screenshot.jpg"]
+```
+
+Relative paths work in both contexts automatically.
 
 ### Performance
 - Images lazy-loaded via Intersection Observer (`utils.js`)
