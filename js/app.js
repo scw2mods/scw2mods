@@ -140,6 +140,14 @@ class ModsApp {
                         ).join('')}
                     </div>
                     <footer class="mod-card-footer">
+                        ${mod.links.download ? `
+                            <a href="${mod.links.download}"
+                               class="mod-card-download"
+                               aria-label="Download ${sanitizeHTML(mod.name)}"
+                               onclick="event.stopPropagation()">
+                                ⬇️ Download
+                            </a>
+                        ` : ''}
                         <button class="mod-card-cta" aria-label="View details of ${sanitizeHTML(mod.name)}">
                             Details
                         </button>
