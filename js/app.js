@@ -140,16 +140,6 @@ class ModsApp {
                         ).join('')}
                     </div>
                     <footer class="mod-card-footer">
-                        <div class="mod-card-stats">
-                            <span class="mod-card-stat">
-                                <span>⬇️</span>
-                                <span>${formatNumber(mod.stats.downloads)}</span>
-                            </span>
-                            <span class="mod-card-stat">
-                                <span>⭐</span>
-                                <span>${mod.stats.stars}</span>
-                            </span>
-                        </div>
                         <button class="mod-card-cta" aria-label="View details of ${sanitizeHTML(mod.name)}">
                             Details
                         </button>
@@ -216,24 +206,6 @@ class ModsApp {
                     </ul>
                 </section>
             ` : ''}
-
-            <section class="modal-section">
-                <h3 class="modal-section-title">📊 Statistics</h3>
-                <div class="modal-stats">
-                    <div class="modal-stat">
-                        <span class="modal-stat-value">${formatNumber(mod.stats.downloads)}</span>
-                        <span class="modal-stat-label">Downloads</span>
-                    </div>
-                    <div class="modal-stat">
-                        <span class="modal-stat-value">${mod.stats.stars}</span>
-                        <span class="modal-stat-label">Stars</span>
-                    </div>
-                    <div class="modal-stat">
-                        <span class="modal-stat-value">${formatDate(mod.stats.lastUpdate)}</span>
-                        <span class="modal-stat-label">Last Update</span>
-                    </div>
-                </div>
-            </section>
 
             ${mod.compatibility ? `
                 <section class="modal-section">

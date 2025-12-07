@@ -27,6 +27,10 @@ git push origin main
 # Site updates automatically in 2-3 minutes
 ```
 
+**Commit conventions:**
+- All commit messages must be in English
+- Follow conventional commits format (feat:, fix:, refactor:, etc.)
+
 ### Validation
 ```bash
 # Validate JSON mods (online)
