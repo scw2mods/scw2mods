@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collection complète des mods pour Strip Club Wars 2 - Découvrez, recherchez et téléchargez les meilleurs mods">
+    <meta name="keywords" content="SCW2, Strip Club Wars 2, mods, modifications, gaming">
+    <meta name="author" content="SCW2 Community">
+
+    <title>SCW2 Mods Showcase - Collection de Mods</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🎮 <span class="logo-text">SCW2</span> <span class="logo-accent">Mods</span></h1>
+                </div>
+
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="Rechercher un mod..."
+                        aria-label="Rechercher un mod"
+                    >
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <nav class="header-nav">
+                    <a href="https://github.com/scw2mods" target="_blank" rel="noopener" class="nav-link">
+                        GitHub
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Stats Bar -->
+            <section class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-value" id="totalMods">0</span>
+                    <span class="stat-label">Mods disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="categoriesCount">0</span>
+                    <span class="stat-label">Catégories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="lastUpdate">-</span>
+                    <span class="stat-label">Dernière mise à jour</span>
+                </div>
+            </section>
+
+            <!-- Filters -->
+            <section class="filters-section">
+                <div class="filters-header">
+                    <h2 class="filters-title">Filtrer par catégorie</h2>
+                    <button class="filter-reset" id="resetFilters">Réinitialiser</button>
+                </div>
+                <div class="filters-container" id="filtersContainer">
+                    <!-- Filters will be dynamically generated -->
+                </div>
+
+                <!-- Sort -->
+                <div class="sort-container">
+                    <label for="sortSelect" class="sort-label">Trier par :</label>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="name-asc">Nom (A-Z)</option>
+                        <option value="name-desc">Nom (Z-A)</option>
+                        <option value="date-desc">Plus récent</option>
+                        <option value="date-asc">Plus ancien</option>
+                        <option value="downloads-desc">Plus téléchargé</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Mods Grid -->
+            <section class="mods-section">
+                <div class="mods-grid" id="modsGrid">
+                    <!-- Mod cards will be dynamically generated -->
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>Aucun mod trouvé</h3>
+                    <p>Essayez de modifier vos critères de recherche ou de filtrage.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>À propos</h3>
+                    <p>Collection communautaire des mods pour Strip Club Wars 2.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/scw2mods" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="#" id="contributeLink">Contribuer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Communauté</h3>
+                    <p>Créé avec ❤️ par la communauté SCW2</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SCW2 Mods Showcase - Open Source</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Fermer">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
