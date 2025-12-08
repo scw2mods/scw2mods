@@ -271,6 +271,61 @@
           ]
         }
       ]
+    },
+    {
+      "id": "harem",
+      "name": "Harem",
+      "slug": "harem",
+      "version": "1.0",
+      "author": "QSonic",
+      "description": "Harem management system that automatically maintains loyalty and harmony among romantic partners",
+      "longDescription": "How it works\n\nWhen you interact with an NPC who is a romantic partner, they will now have a new interaction called Maintain Harem. Clicking this interaction will automatically update all your romantic partners to have max Loyalty. In addition, they will all have their opinions for Polyamory, Submissive, and Incest set to Love (2).\n\nFurther, every member of your harem will then have the following relation updates applied:\n\n1. Rival and Enemy relationships between Harem members will be removed.\n2. Harem members will all become Friends.\n3. The following relationship modifiers will be applied:\n   - Extended Family\n   - My Friend\n\nThis will also consume a tick and some energy.\n\nEffects\n\nHopefully, this will reduce the amount of infighting between harem members. It certainly should decrease the number of partners asking you to break up with existing partners, and will slightly rectify pre-existing bad blood between such NPCs. It doesn't completely eliminate friction -- partially because I think it's more realistic, and partially because I can't be arsed to write more comprehensive logic for it right now.\n\nI don't foresee any complications with the running of the game, but please note that I have a) not tested this comprehensively and b) not searched for edge cases at all. While it should be fine to add/remove mid-playthrough, it would be wise to maintain a backed-up save in case of unpleasantness.\n\nInstallation\n\nExtract harem.zip anywhere. Place the harem.tfl file in your tfel folder.\n\nTo uninstall, delete the harem.tfl file.\n\nFurther Plans?\n\nNone right now. Between classes and work I don't have a lot of time to work on a fully-fledged mod. This has been a fun little aside, as it were. But if there's interest in a more complete overhaul I could be convinced (for a crisp twenty dollar bill) to devote more time to it, though anything like that would have to wait til my exams are over in Feb 2026. That said, if I make any improvements to it for my own use, I'll be sure to update y'all as well.",
+      "category": "gameplay",
+      "tags": [
+        "harem",
+        "relationships",
+        "romance",
+        "polyamory",
+        "interactions",
+        "quality-of-life"
+      ],
+      "status": "stable",
+      "compatibility": {
+        "gameVersion": "2.0.6",
+        "dependencies": [],
+        "conflicts": []
+      },
+      "features": [
+        "One-click harem maintenance interaction",
+        "Automatically sets all partners to max loyalty",
+        "Updates opinions to support polyamory",
+        "Removes rivalry and enemy relationships between partners",
+        "Converts all harem members to friends",
+        "Applies relationship bonding modifiers"
+      ],
+      "media": {
+        "screenshots": [],
+        "video": null,
+        "icon": null
+      },
+      "links": {
+        "download": "downloads/harem_v1.0.7z",
+        "source": null,
+        "docs": null,
+        "issues": null
+      },
+      "stats": {
+        "lastUpdate": "2025-12-08"
+      },
+      "changelog": [
+        {
+          "version": "1.0",
+          "date": "2025-12-08",
+          "changes": [
+            "Initial release"
+          ]
+        }
+      ]
     }
   ]
 }

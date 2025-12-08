@@ -52,6 +52,15 @@ function sanitizeHTML(str) {
 }
 
 /**
+ * Convert newlines to <br> tags (after sanitizing)
+ * @param {string} str - String to convert
+ * @returns {string} String with <br> tags
+ */
+function nl2br(str) {
+    return sanitizeHTML(str).replace(/\n/g, '<br>');
+}
+
+/**
  * Get query parameters from URL
  * @returns {Object} Query parameters
  */

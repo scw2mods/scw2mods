@@ -201,7 +201,7 @@ class ModsApp {
 
             <section class="modal-section">
                 <h3 class="modal-section-title">📝 Description</h3>
-                <p class="modal-description">${sanitizeHTML(mod.longDescription)}</p>
+                <p class="modal-description">${nl2br(mod.longDescription)}</p>
             </section>
 
             ${mod.features && mod.features.length > 0 ? `
