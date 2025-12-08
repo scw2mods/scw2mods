@@ -3,7 +3,7 @@
     "title": "SCW2 Mods Showcase",
     "description": "Complete collection of mods for Strip Club Wars 2",
     "version": "1.0.0",
-    "lastUpdated": "2025-12-07"
+    "lastUpdated": "2025-12-08"
   },
   "categories": [
     {
@@ -161,6 +161,111 @@
         {
           "version": "1.0",
           "date": "2025-12-07",
+          "changes": [
+            "Initial release"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cherry_blossom_backgrounds",
+      "name": "Cherry Blossom Backgrounds",
+      "slug": "cherry-blossom-backgrounds",
+      "version": "1.0",
+      "author": "Elkrose",
+      "description": "Complete background replacement pack featuring cherry blossom theme in stunning 4K quality",
+      "longDescription": "Transforms the entire visual atmosphere of Strip Club Wars 2 with a comprehensive cherry blossom themed background pack. Every single background in the game has been replaced with beautiful 4K quality images featuring cherry blossoms, creating a cohesive and immersive aesthetic throughout all locations.",
+      "category": "graphics",
+      "tags": [
+        "backgrounds",
+        "graphics",
+        "cherry-blossom",
+        "4K",
+        "visual-overhaul"
+      ],
+      "status": "stable",
+      "compatibility": {
+        "gameVersion": "2.0.6",
+        "dependencies": [],
+        "conflicts": []
+      },
+      "features": [
+        "Complete replacement of all game backgrounds",
+        "Cherry blossom theme throughout",
+        "4K quality images for enhanced visual experience",
+        "Cohesive aesthetic across all locations"
+      ],
+      "media": {
+        "screenshots": ["cherry-blossom-1.png"],
+        "video": null,
+        "icon": null
+      },
+      "links": {
+        "download": "https://gofile.io/d/8G9fYg",
+        "source": null,
+        "docs": null,
+        "issues": null
+      },
+      "stats": {
+        "lastUpdate": "2025-12-08"
+      },
+      "changelog": [
+        {
+          "version": "1.0",
+          "date": "2025-12-08",
+          "changes": [
+            "Initial release"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "christmas_backgrounds",
+      "name": "Christmas Backgrounds",
+      "slug": "christmas-backgrounds",
+      "version": "1.0",
+      "author": "Elkrose",
+      "description": "Complete background replacement pack featuring festive Christmas theme in stunning 4K quality",
+      "longDescription": "Brings the holiday spirit to Strip Club Wars 2 with a comprehensive Christmas themed background pack. Every single background in the game has been replaced with beautiful 4K quality images featuring winter and Christmas decorations, creating a festive and immersive atmosphere throughout all locations.",
+      "category": "graphics",
+      "tags": [
+        "backgrounds",
+        "graphics",
+        "christmas",
+        "winter",
+        "4K",
+        "visual-overhaul"
+      ],
+      "status": "stable",
+      "compatibility": {
+        "gameVersion": "2.0.6",
+        "dependencies": [],
+        "conflicts": []
+      },
+      "features": [
+        "Complete replacement of all game backgrounds",
+        "Festive Christmas and winter theme throughout",
+        "4K quality images for enhanced visual experience",
+        "Cohesive holiday aesthetic across all locations"
+      ],
+      "media": {
+        "screenshots": ["christmas-backgrounds-1.png"],
+        "video": null,
+        "icon": null
+      },
+      "links": {
+        "download": "https://gofile.io/d/8G9fYg",
+        "source": null,
+        "docs": null,
+        "issues": null
+      },
+      "stats": {
+        "lastUpdate": "2025-12-08"
+      },
+      "changelog": [
+        {
+          "version": "1.0",
+          "date": "2025-12-08",
           "changes": [
             "Initial release"
           ]
