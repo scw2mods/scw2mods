@@ -3,7 +3,7 @@
     "title": "SCW2 Mods Showcase",
     "description": "Complete collection of mods for Strip Club Wars 2",
     "version": "1.0.0",
-    "lastUpdated": "2025-12-10"
+    "lastUpdated": "2025-12-12"
   },
   "categories": [
     {
@@ -374,6 +374,58 @@
           "date": "2025-12-10",
           "changes": [
             "Version 2 release with updated images"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "threesomes",
+      "name": "Threesome Mod",
+      "slug": "threesomes",
+      "version": "1.0",
+      "author": "teuitonicdude",
+      "description": "When a character sees two others having sex, it can interrupt them and JOIN them in a threesome!",
+      "longDescription": "When a character sees two others having sex, it can interrupt them and JOIN them in a threesome! Particularly awesome when your girlfriend surprises you in bed with someone else.",
+      "category": "gameplay",
+      "tags": [
+        "threesome",
+        "interactions",
+        "adult",
+        "relationships",
+        "gameplay-enhancement"
+      ],
+      "status": "stable",
+      "compatibility": {
+        "gameVersion": "2.0.6",
+        "dependencies": [],
+        "conflicts": []
+      },
+      "features": [
+        "Characters can interrupt and join ongoing sexual encounters",
+        "Creates spontaneous threesome scenarios",
+        "Adds unpredictability to adult interactions",
+        "Enhances relationship dynamics and gameplay immersion"
+      ],
+      "media": {
+        "screenshots": [],
+        "video": null,
+        "icon": null
+      },
+      "links": {
+        "download": "downloads/threesomes.zip",
+        "source": null,
+        "docs": null,
+        "issues": null
+      },
+      "stats": {
+        "lastUpdate": "2025-12-12"
+      },
+      "changelog": [
+        {
+          "version": "1.0",
+          "date": "2025-12-12",
+          "changes": [
+            "Initial release"
           ]
         }
       ]
