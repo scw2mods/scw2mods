@@ -3,7 +3,7 @@
     "title": "SCW2 Mods Showcase",
     "description": "Complete collection of mods for Strip Club Wars 2",
     "version": "1.0.0",
-    "lastUpdated": "2025-12-12"
+    "lastUpdated": "2025-12-13"
   },
   "categories": [
     {
@@ -413,6 +413,61 @@
       },
       "links": {
         "download": "downloads/threesomes.zip",
+        "source": null,
+        "docs": null,
+        "issues": null
+      },
+      "stats": {
+        "lastUpdate": "2025-12-12"
+      },
+      "changelog": [
+        {
+          "version": "1.0",
+          "date": "2025-12-12",
+          "changes": [
+            "Initial release"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philash_cheats_compilation",
+      "name": "Cheats Compilation",
+      "slug": "cheats-compilation",
+      "version": "1.0",
+      "author": "Philash",
+      "description": "Compilation of several other cheat mods with multiple powerful cheat options",
+      "longDescription": "A comprehensive cheat compilation that combines multiple cheat functionalities into one convenient package. This mod includes various powerful cheat options to enhance your gameplay experience and simplify management tasks.",
+      "category": "gameplay",
+      "tags": [
+        "cheat",
+        "compilation",
+        "gameplay",
+        "quality-of-life",
+        "management"
+      ],
+      "status": "stable",
+      "compatibility": {
+        "gameVersion": "2.0.6",
+        "dependencies": [],
+        "conflicts": []
+      },
+      "features": [
+        "Boost all player stats and likes",
+        "Boost all NPC stats and likes",
+        "Make any NPC a girlfriend",
+        "Make any NPC a slave",
+        "Increase energy instantly",
+        "Clear club maintenance with one click",
+        "Pass all laws automatically"
+      ],
+      "media": {
+        "screenshots": [],
+        "video": null,
+        "icon": null
+      },
+      "links": {
+        "download": "D:\\jeux\\jack\\StripClubWars2_06\\mods\\philashcheats.rar",
         "source": null,
         "docs": null,
         "issues": null
