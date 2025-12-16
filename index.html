@@ -58,24 +58,21 @@
         <div class="container">
             <!-- Filters -->
             <section class="filters-section">
-                <div class="filters-header">
-                    <h2 class="filters-title">Filter by Category</h2>
-                    <button class="filter-reset" id="resetFilters">Reset</button>
-                </div>
-                <div class="filters-container" id="filtersContainer">
-                    <!-- Filters will be dynamically generated -->
-                </div>
+                <div class="filters-row">
+                    <div class="filters-container" id="filtersContainer">
+                        <!-- Filters will be dynamically generated -->
+                    </div>
 
-                <!-- Sort -->
-                <div class="sort-container">
-                    <label for="sortSelect" class="sort-label">Sort by:</label>
-                    <select id="sortSelect" class="sort-select">
-                        <option value="name-asc">Name (A-Z)</option>
-                        <option value="name-desc">Name (Z-A)</option>
-                        <option value="date-desc">Newest</option>
-                        <option value="date-asc">Oldest</option>
-                        <option value="downloads-desc">Most Downloaded</option>
-                    </select>
+                    <div class="sort-container">
+                        <label for="sortSelect" class="sort-label">Sort by</label>
+                        <select id="sortSelect" class="sort-select">
+                            <option value="name-asc">Name (A-Z)</option>
+                            <option value="name-desc">Name (Z-A)</option>
+                            <option value="date-desc">Newest</option>
+                            <option value="date-asc">Oldest</option>
+                            <option value="downloads-desc">Most Downloaded</option>
+                        </select>
+                    </div>
                 </div>
             </section>
 

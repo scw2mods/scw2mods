@@ -64,7 +64,15 @@ class ModsApp {
      */
     renderFilters() {
         const categories = modsManager.getCategories();
-        const filtersHTML = categories.map(category => `
+        const filtersHTML = `
+            <button
+                class="filter-btn active"
+                data-category=""
+                aria-label="Show all mods"
+            >
+                <span>All</span>
+            </button>
+        ` + categories.map(category => `
             <button
                 class="filter-btn"
                 data-category="${category.id}"
@@ -313,13 +321,16 @@ class ModsApp {
             });
 
             // Set filter
-            if (isActive) {
-                modsManager.setFilter(null);
-                updateURL({ category: null });
-            } else {
-                filterBtn.classList.add('active');
-                modsManager.setFilter(category);
-                updateURL({ category });
+            if (!isActive) {
+                if (category === '') {
+                    // Clear all filters
+                    modsManager.clearFilters();
+                    updateURL({ category: null });
+                } else {
+                    filterBtn.classList.add('active');
+                    modsManager.setFilter(category);
+                    updateURL({ category });
+                }
             }
 
             this.renderModsGrid();
@@ -401,6 +412,13 @@ class ModsApp {
             if (filterBtn) {
                 filterBtn.classList.add('active');
             }
+        } else {
+            // Activate "All" filter
+            const allFilterBtn = document.querySelector('[data-category=""]');
+            if (allFilterBtn) {
+                allFilterBtn.classList.add('active');
+            }
+        }
         }
 
         // Apply search
