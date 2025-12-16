@@ -381,11 +381,7 @@ class ModsApp {
             }
         });
 
-        // Contribute link
-        document.getElementById('contributeLink').addEventListener('click', (e) => {
-            e.preventDefault();
-            window.open('https://github.com/scw2mods/scw2mods.github.io/blob/main/CONTRIBUTING.md', '_blank');
-        });
+
     }
 
     /**
