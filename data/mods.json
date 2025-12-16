@@ -35,7 +35,7 @@
       "compatibility": {
         "gameVersion": "2.0.6",
         "dependencies": [],
-        "conflicts": []
+        "conflicts": ["sexlib.tfl", "threesome.tfl"]
       },
       "features": [
         "400+ unique dialogue variations"
@@ -82,7 +82,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.06-2.07",
         "dependencies": [],
         "conflicts": []
       },
@@ -135,7 +135,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.06-2.07",
         "dependencies": [],
         "conflicts": []
       },
@@ -185,7 +185,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.06-2.07",
         "dependencies": [],
         "conflicts": []
       },
@@ -238,7 +238,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.06-2.07",
         "dependencies": [],
         "conflicts": []
       },
@@ -291,7 +291,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.06-2.07",
         "dependencies": [],
         "conflicts": []
       },
@@ -345,7 +345,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.06-2.07",
         "dependencies": [],
         "conflicts": ["ice1_v1"]
       },
@@ -398,7 +398,7 @@
       "compatibility": {
         "gameVersion": "2.0.6",
         "dependencies": [],
-        "conflicts": []
+        "conflicts": ["sexlib.tfl", "threesome.tfl"]
       },
       "features": [
         "Characters can interrupt and join ongoing sexual encounters",
@@ -448,7 +448,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.06-2.07",
         "dependencies": [],
         "conflicts": []
       },
