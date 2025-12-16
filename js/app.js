@@ -9,7 +9,6 @@ class ModsApp {
             filtersContainer: document.getElementById('filtersContainer'),
             modsGrid: document.getElementById('modsGrid'),
             sortSelect: document.getElementById('sortSelect'),
-            resetFilters: document.getElementById('resetFilters'),
             noResults: document.getElementById('noResults'),
             modal: document.getElementById('modModal'),
             modalBody: document.getElementById('modalBody'),
@@ -343,17 +342,7 @@ class ModsApp {
             updateURL({ sort: e.target.value });
         });
 
-        // Reset filters
-        this.elements.resetFilters.addEventListener('click', () => {
-            modsManager.clearFilters();
-            this.elements.searchInput.value = '';
-            this.elements.sortSelect.value = 'name-asc';
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            this.renderModsGrid();
-            updateURL({ category: null, search: null, sort: null, mod: null });
-        });
+
 
         // Mod cards click
         this.elements.modsGrid.addEventListener('click', (e) => {
@@ -418,7 +407,6 @@ class ModsApp {
             if (allFilterBtn) {
                 allFilterBtn.classList.add('active');
             }
-        }
         }
 
         // Apply search
