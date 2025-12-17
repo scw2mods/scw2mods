@@ -57,9 +57,17 @@
       "changelog": [
         {
           "version": "0.1",
-          "date": "2025-12-17",
+          "date": "2025-12-10",
           "changes": [
             "Initial release"
+          ]
+        },
+        {
+          "version": "0.2",
+          "date": "2025-12-17",
+          "changes": [
+            "Varied orgasms",
+            "2.07 update"
           ]
         }
       ]
@@ -382,7 +390,7 @@
       "id": "threesomes",
       "name": "Threesome Mod",
       "slug": "threesomes",
-      "version": "1.0",
+      "version": "1.0-2.07",
       "author": "teuitonicdude",
       "description": "When a character sees two others having sex, it can interrupt them and JOIN them in a threesome!",
       "longDescription": "When a character sees two others having sex, it can interrupt them and JOIN them in a threesome! Particularly awesome when your girlfriend surprises you in bed with someone else.",
@@ -396,7 +404,7 @@
       ],
       "status": "stable",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.0.7",
         "dependencies": [],
         "conflicts": ["sexlib.tfl", "threesome.tfl"]
       },
@@ -412,13 +420,13 @@
         "icon": null
       },
       "links": {
-        "download": "downloads/threesomes.zip",
+        "download": "downloads/threesomes-2.07.zip",
         "source": null,
         "docs": null,
         "issues": null
       },
       "stats": {
-        "lastUpdate": "2025-12-12"
+        "lastUpdate": "2025-12-17"
       },
       "changelog": [
         {
@@ -426,6 +434,13 @@
           "date": "2025-12-12",
           "changes": [
             "Initial release"
+          ]
+        },
+        {
+          "version": "1.0-2.07",
+          "date": "2025-12-17",
+          "changes": [
+            "SCW2.07 update"
           ]
         }
       ]
