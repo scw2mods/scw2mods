@@ -2,8 +2,8 @@
   "site": {
     "title": "SCW2 Mods Showcase",
     "description": "Complete collection of mods for Strip Club Wars 2",
-    "version": "1.0.0",
-    "lastUpdated": "2025-12-13"
+    "version": "1.0.1",
+    "lastUpdated": "2025-12-17"
   },
   "categories": [
     {
@@ -22,7 +22,7 @@
       "id": "varied_dialogues",
       "name": "Varied Dialogues",
       "slug": "varied-dialogues",
-      "version": "0.1",
+      "version": "0.2",
       "author": "Slaver0",
       "description": "Transforms repetitive sexual dialogues into a dynamic psychological system with 400+ variations.",
       "longDescription": "Uses character likes (rough sex, domination, submission) to generate unique dialogues. Also adds random variations when no likes are relevant.",
@@ -33,7 +33,7 @@
       ],
       "status": "beta",
       "compatibility": {
-        "gameVersion": "2.0.6",
+        "gameVersion": "2.0.7",
         "dependencies": [],
         "conflicts": ["sexlib.tfl", "threesome.tfl"]
       },
@@ -46,18 +46,18 @@
         "icon": null
       },
       "links": {
-        "download": "downloads/varied_dialogues_v0.1.zip",
+        "download": "downloads/varied_dialogues_v0.2-b0cac41.zip",
         "source": null,
         "docs": null,
         "issues": null
       },
       "stats": {
-        "lastUpdate": "2025-12-07"
+        "lastUpdate": "2025-12-17"
       },
       "changelog": [
         {
           "version": "0.1",
-          "date": "2025-12-07",
+          "date": "2025-12-17",
           "changes": [
             "Initial release"
           ]
